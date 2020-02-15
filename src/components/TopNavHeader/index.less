@@ -1,0 +1,73 @@
+.head {
+  width: 100%;
+  transition: background 0.3s, width 0.2s;
+  height: 70px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  position: relative;
+  :global {
+    .ant-menu-submenu.ant-menu-submenu-horizontal {
+      line-height: 70px;
+      height: 100%;
+      .ant-menu-submenu-title {
+        height: 100%;
+      }
+    }
+  }
+  &.light {
+    background-color: #fff;
+  }
+  .main {
+    display: flex;
+    height: 70px;
+    padding-left: 24px;
+    &.wide {
+      max-width: 1200px;
+      margin: auto;
+      padding-left: 0;
+    }
+    .left {
+      flex: 1;
+      display: flex;
+    }
+    .right {
+      margin-right: 24px;
+      color: #fff;
+      .loginName{
+        margin-left: 15px;
+      }
+      .logout{
+        cursor: pointer; 
+      }
+    }
+  }
+}
+
+.logo {
+  width: 165px;
+  height: 70px;
+  position: relative;
+  line-height: 70px;
+  transition: all 0.3s;
+  overflow: hidden;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 48px;
+    position: relative;
+    top: -3px;
+  }
+  h1 {
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+  }
+}
+
+.light {
+  h1 {
+    color: #002140;
+  }
+}
