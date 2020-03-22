@@ -9,7 +9,7 @@ class ZoomImage extends Component {
   render() {
     const {title} = this.props;  
     return (
-      <a className='zoomImage'>
+      <a className='zoomImage' style={{width: '100%', height: '100%'}}>
         <img {...this.props}/>
         {title ? <div className='title'>{title}</div> : ''}
       </a>

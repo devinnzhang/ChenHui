@@ -8,7 +8,7 @@ import {
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/lib/renderRoutes';
 import history from '@@/history';
-import RendererWrapper0 from '/Users/devinnzhang/Documents/home/chenhui/src/pages/.umi/LocaleWrapper.jsx';
+import RendererWrapper0 from '/Users/devinnzhang/Documents/github/ChenHui/src/pages/.umi/LocaleWrapper.jsx';
 import _dvaDynamic from 'dva/dynamic';
 
 const Router = require('dva/router').routerRedux.ConnectedRouter;
@@ -19,7 +19,7 @@ const routes = [
     component: __IS_BROWSER
       ? _dvaDynamic({
           component: () => import('../../layouts/BasicLayout'),
-          LoadingComponent: require('/Users/devinnzhang/Documents/home/chenhui/src/components/PageLoading/index')
+          LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
             .default,
         })
       : require('../../layouts/BasicLayout').default,
@@ -34,7 +34,7 @@ const routes = [
         component: __IS_BROWSER
           ? _dvaDynamic({
               component: () => import('../Home/Index'),
-              LoadingComponent: require('/Users/devinnzhang/Documents/home/chenhui/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
                 .default,
             })
           : require('../Home/Index').default,
@@ -47,7 +47,7 @@ const routes = [
         component: __IS_BROWSER
           ? _dvaDynamic({
               component: () => import('../Blender/Index'),
-              LoadingComponent: require('/Users/devinnzhang/Documents/home/chenhui/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
                 .default,
             })
           : require('../Blender/Index').default,
@@ -59,7 +59,7 @@ const routes = [
         component: __IS_BROWSER
           ? _dvaDynamic({
               component: () => import('../Juicer/Index'),
-              LoadingComponent: require('/Users/devinnzhang/Documents/home/chenhui/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
                 .default,
             })
           : require('../Juicer/Index').default,
@@ -71,7 +71,7 @@ const routes = [
         component: __IS_BROWSER
           ? _dvaDynamic({
               component: () => import('../About/Index'),
-              LoadingComponent: require('/Users/devinnzhang/Documents/home/chenhui/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
                 .default,
             })
           : require('../About/Index').default,
@@ -83,7 +83,7 @@ const routes = [
         component: __IS_BROWSER
           ? _dvaDynamic({
               component: () => import('../Contact/Index'),
-              LoadingComponent: require('/Users/devinnzhang/Documents/home/chenhui/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
                 .default,
             })
           : require('../Contact/Index').default,
@@ -92,7 +92,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('/Users/devinnzhang/Documents/home/chenhui/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/Users/devinnzhang/Documents/github/ChenHui/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -102,7 +102,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('/Users/devinnzhang/Documents/home/chenhui/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('/Users/devinnzhang/Documents/github/ChenHui/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: true },
       ),

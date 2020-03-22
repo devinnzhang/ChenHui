@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import styles from '../Index.less'
 
-import juicerImg from '@/assets/juicer.jpeg'
-import blenderImg from '@/assets/blender.jpeg'
+import juicerImg from '@/assets/juicer.jpg'
+import blenderImg from '@/assets/blender.jpg'
+import sticBlenderImg from '@/assets/stick_blender.jpg'
 
 import ZoomImage from './Image'
 
@@ -19,14 +20,19 @@ class Products extends Component {
           <div className={styles.title}>PRODUCTS</div>
           <div className={styles.divider}> </div>
           <ul className={styles.card}>
-              <li style={{marginLeft: '180px'}}>
+              <li>
                 <div className={styles.image}>
-                  <ZoomImage src={juicerImg} title='Juicer'/>
+                  <ZoomImage src={sticBlenderImg} title='Stick Blender'/>
                 </div>
               </li>
-              <li style={{marginLeft: '40px'}}>
+              <li style={{marginLeft: '30px'}}>
                 <div className={styles.image}>
-                  <ZoomImage src={blenderImg} title='Blender'/>
+                  <ZoomImage src={juicerImg} title='Blender'/>
+                </div>
+              </li>
+              <li style={{marginLeft: '30px'}}>
+                <div className={styles.image}>
+                  <ZoomImage src={blenderImg} title='Juicer'/>
                 </div>
               </li>
           </ul>

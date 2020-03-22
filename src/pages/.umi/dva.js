@@ -20,13 +20,13 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  app.model({ namespace: 'global', ...(require('/Users/devinnzhang/Documents/home/chenhui/src/models/global.js').default) });
-app.model({ namespace: 'list', ...(require('/Users/devinnzhang/Documents/home/chenhui/src/models/list.js').default) });
-app.model({ namespace: 'login', ...(require('/Users/devinnzhang/Documents/home/chenhui/src/models/login.js').default) });
-app.model({ namespace: 'project', ...(require('/Users/devinnzhang/Documents/home/chenhui/src/models/project.js').default) });
-app.model({ namespace: 'search', ...(require('/Users/devinnzhang/Documents/home/chenhui/src/models/search.js').default) });
-app.model({ namespace: 'setting', ...(require('/Users/devinnzhang/Documents/home/chenhui/src/models/setting.js').default) });
-app.model({ namespace: 'user', ...(require('/Users/devinnzhang/Documents/home/chenhui/src/models/user.js').default) });
+  app.model({ namespace: 'global', ...(require('/Users/devinnzhang/Documents/github/ChenHui/src/models/global.js').default) });
+app.model({ namespace: 'list', ...(require('/Users/devinnzhang/Documents/github/ChenHui/src/models/list.js').default) });
+app.model({ namespace: 'login', ...(require('/Users/devinnzhang/Documents/github/ChenHui/src/models/login.js').default) });
+app.model({ namespace: 'project', ...(require('/Users/devinnzhang/Documents/github/ChenHui/src/models/project.js').default) });
+app.model({ namespace: 'search', ...(require('/Users/devinnzhang/Documents/github/ChenHui/src/models/search.js').default) });
+app.model({ namespace: 'setting', ...(require('/Users/devinnzhang/Documents/github/ChenHui/src/models/setting.js').default) });
+app.model({ namespace: 'user', ...(require('/Users/devinnzhang/Documents/github/ChenHui/src/models/user.js').default) });
   return app;
 }
 

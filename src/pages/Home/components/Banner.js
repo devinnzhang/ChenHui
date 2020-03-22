@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 // import classNames from 'classnames/bind'
-import { Carousel, Icon } from 'antd'
+import { Carousel } from 'antd'
 
-import bannerImg1 from '@/assets/banner_1.jpeg'
-import bannerImg2 from '@/assets/banner_2.jpeg'
+import bannerImg1 from '@/assets/banner_1.jpg'
+import bannerImg2 from '@/assets/banner_2.jpg'
 
 import styles from './Banner.less'
 
