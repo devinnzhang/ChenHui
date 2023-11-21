@@ -8,21 +8,14 @@ import {
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/lib/renderRoutes';
 import history from '@@/history';
-import RendererWrapper0 from '/Users/devinnzhang/Documents/github/ChenHui/src/pages/.umi/LocaleWrapper.jsx';
-import _dvaDynamic from 'dva/dynamic';
+import RendererWrapper0 from '/data/Chenhui/src/pages/.umi/LocaleWrapper.jsx';
 
 const Router = require('dva/router').routerRedux.ConnectedRouter;
 
 const routes = [
   {
     path: '/',
-    component: __IS_BROWSER
-      ? _dvaDynamic({
-          component: () => import('../../layouts/BasicLayout'),
-          LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
-            .default,
-        })
-      : require('../../layouts/BasicLayout').default,
+    component: require('../../layouts/BasicLayout').default,
     routes: [
       {
         path: '/',
@@ -31,68 +24,33 @@ const routes = [
       },
       {
         path: '/home',
-        component: __IS_BROWSER
-          ? _dvaDynamic({
-              component: () => import('../Home/Index'),
-              LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
-                .default,
-            })
-          : require('../Home/Index').default,
-        hideInMenu: true,
+        name: 'home',
+        component: require('../Home/Index').default,
+        hideInMenu: false,
         exact: true,
       },
       {
-        path: '/blender',
-        name: 'blenderIndex',
-        component: __IS_BROWSER
-          ? _dvaDynamic({
-              component: () => import('../Blender/Index'),
-              LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
-                .default,
-            })
-          : require('../Blender/Index').default,
-        exact: true,
-      },
-      {
-        path: '/juicer',
-        name: 'juicerIndex',
-        component: __IS_BROWSER
-          ? _dvaDynamic({
-              component: () => import('../Juicer/Index'),
-              LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
-                .default,
-            })
-          : require('../Juicer/Index').default,
+        path: '/product',
+        name: 'product',
+        component: require('../Product/Index').default,
         exact: true,
       },
       {
         path: '/about',
         name: 'about',
-        component: __IS_BROWSER
-          ? _dvaDynamic({
-              component: () => import('../About/Index'),
-              LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
-                .default,
-            })
-          : require('../About/Index').default,
+        component: require('../About/Index').default,
         exact: true,
       },
       {
         path: '/contact',
         name: 'contact',
-        component: __IS_BROWSER
-          ? _dvaDynamic({
-              component: () => import('../Contact/Index'),
-              LoadingComponent: require('/Users/devinnzhang/Documents/github/ChenHui/src/components/PageLoading/index')
-                .default,
-            })
-          : require('../Contact/Index').default,
+        component: require('../Contact/Index').default,
         exact: true,
       },
       {
         component: () =>
           React.createElement(
-            require('/Users/devinnzhang/Documents/github/ChenHui/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/data/Chenhui/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -102,7 +60,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('/Users/devinnzhang/Documents/github/ChenHui/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('/data/Chenhui/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: true },
       ),

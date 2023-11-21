@@ -26,10 +26,11 @@ export default class TopNavHeader extends PureComponent {
                 <img src={logo} alt="logo" />
               </Link>
             </div>
-            <div tyle={{maxWidth}}>
+            
+          </div>
+          <div className={styles.right} style={{maxWidth}}>
               <BaseMenu {...this.props} style={{ border: 'none', height: 70 }} />
             </div>
-          </div>
         </div>
       </div>
     );

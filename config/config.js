@@ -20,9 +20,9 @@ const plugins = [
         default: 'zh-CN', // default zh-CN
         baseNavigator: true, // default true, when it is true, will use `navigator.language` overwrite default
       },
-      dynamicImport: {
-        loadingComponent: './components/PageLoading/index',
-      },
+      // dynamicImport: {
+      //   loadingComponent: './components/PageLoading/index',
+      // },
       ...(!process.env.TEST && os.platform() === 'darwin'
         ? {
             dll: {
@@ -75,7 +75,7 @@ export default {
 
   publicPath: './', //静态资源公共路径
   hash: true, //文件hash
-  history: 'browser', //hash路由
+  history: 'hash', //hash路由
   // cssPublicPath: './',
   //exportStatic: {},
   ignoreMomentLocale: true,

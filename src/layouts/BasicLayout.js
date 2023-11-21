@@ -12,11 +12,12 @@ import { formatMessage } from 'umi/locale';
 import SiderMenu from '@/components/SiderMenu';
 import Authorized from '@/utils/Authorized';
 import SettingDrawer from '@/components/SettingDrawer';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.jpg';
 import Footer from './Footer';
 import Header from './Header';
 import Context from './MenuContext';
 import styles from './BasicLayout.less';
+import SubBanner from './SubBanner';
 
 const { Content } = Layout;
 
@@ -96,13 +97,13 @@ class BasicLayout extends React.PureComponent {
 
   componentDidMount() {
     const { dispatch } = this.props;
-    dispatch({
-      type: 'user/fetchCurrent',
-    });
+    // dispatch({
+    //   type: 'user/fetchCurrent',
+    // });
 
-    dispatch({
-      type: 'setting/getSetting',
-    });
+    // dispatch({
+    //   type: 'setting/getSetting',
+    // });
 
     this.renderRef = requestAnimationFrame(() => {
       this.setState({
@@ -195,8 +196,9 @@ class BasicLayout extends React.PureComponent {
     const { fixedHeader, location } = this.props;
     return {
       //margin: '24px',
-      paddingTop: fixedHeader ? 64 : 0,
+      // paddingTop: fixedHeader ? 64 : 0,
       //background: '#fff'
+      padding: 0,
     };
   };
 
@@ -248,6 +250,7 @@ class BasicLayout extends React.PureComponent {
           }}
         >
           <Header menuData={menuData} logo={logo} {...this.props} />
+          <SubBanner />
           <Content style={this.getContentStyle()}>{children}</Content>
           <Footer />
         </Layout>
