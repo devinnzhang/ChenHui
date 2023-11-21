@@ -1,0 +1,28 @@
+@btnColor: #ff6600; // #ec4e4f
+.activeButtons {
+    .abtn {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        margin: 0 8px;
+        padding: 0 16px;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid #dbdbdb;
+        font-size: 14px;
+        color: #333;
+        border-radius: 15px;
+        cursor: pointer;
+
+        &.active {
+            background: @btnColor;
+            color: #fff;
+            border-color: @btnColor;
+        }
+        &:hover {
+            background: @btnColor;
+            color: #fff;
+            border-color: @btnColor;
+        }
+    }
+}

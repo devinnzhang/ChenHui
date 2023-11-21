@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 // import classNames from 'classnames/bind'
 import { Carousel } from 'antd'
 
-import bannerImg1 from '@/assets/banner_1.jpg'
-import bannerImg2 from '@/assets/banner_2.jpg'
+import bannerImg1 from '@/assets/banner/banner_1.jpeg'
+import bannerImg2 from '@/assets/banner/banner_2.jpeg'
 
 import styles from './Banner.less'
 
@@ -14,7 +14,6 @@ class Banner extends Component {
   componentDidMount(){
   }
   handlePrev = ()=>{
-      debugger;
     this.refs.img.prev(); //ref = img
   }
   handleNext = ()=>{
@@ -27,10 +26,10 @@ class Banner extends Component {
             <a type="right" onClick={this.handleNext} className={styles.bar_right}/>
             <Carousel autoplay ref="img">
                 <div>
-                    <img src={bannerImg1} style={{width: '100%', height: '600px'}}/>
+                    <img src={bannerImg1} style={{width: '100%', height: 'auto'}}/>
                 </div>
                 <div>
-                    <img src={bannerImg2} style={{width: '100%', height: '600px'}}/>
+                    <img src={bannerImg2} style={{width: '100%', height: 'auto'}}/>
                 </div>
             </Carousel>
         </div>

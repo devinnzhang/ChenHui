@@ -30,43 +30,43 @@ const useLocalStorage = true;
 import { LocaleProvider, version } from 'antd';
 import moment from 'moment';
 import 'moment/locale/zh-cn';
-let defaultAntd = require('antd/lib/locale-provider/zh_CN');
+let defaultAntd = require('antd/es/locale-provider/zh_CN');
 defaultAntd = defaultAntd.default || defaultAntd;
 
 const localeInfo = {
   'en-US': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/devinnzhang/Documents/github/ChenHui/src/locales/en-US.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/data/Chenhui/src/locales/en-US.js')),
     },
     locale: 'en-US',
-    antd: require('antd/lib/locale-provider/en_US'),
+    antd: require('antd/es/locale-provider/en_US'),
     data: require('react-intl/locale-data/en'),
     momentLocale: '',
   },
   'pt-BR': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/devinnzhang/Documents/github/ChenHui/src/locales/pt-BR.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/data/Chenhui/src/locales/pt-BR.js')),
     },
     locale: 'pt-BR',
-    antd: require('antd/lib/locale-provider/pt_BR'),
+    antd: require('antd/es/locale-provider/pt_BR'),
     data: require('react-intl/locale-data/pt'),
     momentLocale: 'pt-br',
   },
   'zh-CN': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/devinnzhang/Documents/github/ChenHui/src/locales/zh-CN.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/data/Chenhui/src/locales/zh-CN.js')),
     },
     locale: 'zh-CN',
-    antd: require('antd/lib/locale-provider/zh_CN'),
+    antd: require('antd/es/locale-provider/zh_CN'),
     data: require('react-intl/locale-data/zh'),
     momentLocale: 'zh-cn',
   },
   'zh-TW': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('/Users/devinnzhang/Documents/github/ChenHui/src/locales/zh-TW.js')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('/data/Chenhui/src/locales/zh-TW.js')),
     },
     locale: 'zh-TW',
-    antd: require('antd/lib/locale-provider/zh_TW'),
+    antd: require('antd/es/locale-provider/zh_TW'),
     data: require('react-intl/locale-data/zh'),
     momentLocale: 'zh-tw',
   },
@@ -153,7 +153,7 @@ class LocaleWrapper extends React.Component{
      const isConfigProvider = Number(major) > 3 || (Number(major) >= 3 && Number(minor) >= 21);
      if (isConfigProvider) {
        try {
-         AntdProvider = require('antd/lib/config-provider').default;
+         AntdProvider = require('antd/es/config-provider').default;
        } catch (e) {}
      }
 

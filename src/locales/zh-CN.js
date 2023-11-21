@@ -1,8 +1,10 @@
 export default {
-  'menu.blenderIndex': 'Blender',
-  'menu.juicerIndex': 'Juicer',
-  'menu.about': 'About Chenhui',
-  'menu.contact': 'Contact Us'
+  'menu.home': 'Home',
+  'menu.product': 'Product',
+  // 'menu.blenderIndex': 'Blender',
+  // 'menu.juicerIndex': 'Juicer',
+  'menu.about': 'About',
+  'menu.contact': 'Contact'
   
   
   
